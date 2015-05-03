@@ -1,10 +1,10 @@
 apply plugin: 'com.android.application'
 android {
-    compileSdkVersion 19
+    compileSdkVersion 22
     buildToolsVersion '20.0.0'
 
     defaultConfig {
-        minSdkVersion 14
+        minSdkVersion 19
     }
 
     buildTypes {

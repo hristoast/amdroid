@@ -38,7 +38,7 @@ import java.util.Set;
 public class PlayerServiceClient
 {
 
-	private static final String LOG_TAG = "Ampache_Amdroid_PlayerServiceClient";
+	private static final String LOG_TAG = "PlayerServiceClient";
 
 	private IPlayerService playerService;
 	private PlayerServiceConnection conn;

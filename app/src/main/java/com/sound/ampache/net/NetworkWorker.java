@@ -41,7 +41,7 @@ import java.util.concurrent.LinkedBlockingDeque;
  */
 public class NetworkWorker
 {
-	private static final String LOG_TAG = "Ampache_Android_NetworkService";
+	private static final String LOG_TAG = "Android_NetworkService";
 
 	public static final String KEY_OPERATION = "operation";
 	public static final String KEY_MESSAGE = "message";

@@ -37,7 +37,7 @@ import java.util.Arrays;
 public class GlobalMediaPlayerControl extends PlayerServiceClient
 {
 
-	private final static String LOG_TAG = "Ampache_Amdroid_GlobalMediaPlayerControl";
+	private final static String LOG_TAG = "GlobalMediaPlayerCtrl";
 	private static final String PLAYER_PREFIX = "[Player] ";
 
 	public Boolean prepared = true;

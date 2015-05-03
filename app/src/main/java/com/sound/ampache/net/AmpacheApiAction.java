@@ -1,5 +1,7 @@
 package com.sound.ampache.net;
 
+import java.util.Locale;
+
 /**
  * Created by dejvino on 2.11.14.
  */
@@ -30,7 +32,7 @@ public enum AmpacheApiAction
 
 	public String getKey()
 	{
-		return name().toLowerCase();
+		return name().toLowerCase(Locale.getDefault());
 	}
 
 	public String getName()

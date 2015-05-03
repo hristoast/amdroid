@@ -299,7 +299,7 @@ public final class PlaylistFragment extends Fragment implements OnItemClickListe
 
             /* we don't reuse  */
 			if (convertView == null) {
-				convertView = mInflater.inflate(R.layout.playlist_item, null);
+				convertView = mInflater.inflate(R.layout.playlist_item, parent, false);
 				holder = new plI();
 
 				holder.title = (TextView) convertView.findViewById(R.id.title);

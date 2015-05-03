@@ -21,6 +21,7 @@ package com.sound.ampache.fragments;
  * +------------------------------------------------------------------------+
  */
 
+import android.annotation.SuppressLint;
 import android.app.Fragment;
 import android.content.Context;
 import android.os.Bundle;
@@ -143,6 +144,7 @@ public class LogsFragment extends Fragment implements AdapterView.OnItemClickLis
 			return getCount() <= 0;
 		}
 
+		@SuppressLint("SimpleDateFormat")
 		public View getView(int position, View convertView, ViewGroup parent)
 		{
 			listItem holder;
@@ -150,7 +152,7 @@ public class LogsFragment extends Fragment implements AdapterView.OnItemClickLis
 
             /* we don't reuse  */
 			if (convertView == null) {
-				convertView = mInflater.inflate(R.layout.log_item, null);
+				convertView = mInflater.inflate(R.layout.log_item, parent, false);
 				holder = new listItem();
 
 				holder.timestamp = (TextView) convertView.findViewById(R.id.timestamp);

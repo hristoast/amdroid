@@ -43,7 +43,7 @@ import java.util.Arrays;
 
 public class PlayerService extends Service
 {
-	private static final String LOG_TAG = "Ampache_Amdroid_PlayerService";
+	private static final String LOG_TAG = "Amdroid_PlayerService";
 
 	// Basic service components
 	private Player mediaPlayer;

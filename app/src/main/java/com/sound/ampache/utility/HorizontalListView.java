@@ -75,6 +75,12 @@ public class HorizontalListView extends AdapterView<ListAdapter> {
 		mMaxX = Integer.MAX_VALUE;
 		mScroller = new Scroller(getContext());
 		mGesture = new GestureDetector(getContext(), mOnGesture);
+		post(new Runnable(){
+			@Override
+			public void run() {
+				requestLayout();
+			}
+		});
 	}
 	
 	@Override
@@ -195,15 +201,15 @@ public class HorizontalListView extends AdapterView<ListAdapter> {
 		
 		mCurrentX = mNextX;
 		
-		if(!mScroller.isFinished()){
+		/*if(!mScroller.isFinished()){
 			post(new Runnable(){
 				@Override
 				public void run() {
 					requestLayout();
 				}
 			});
-			
-		}
+
+		}*/
 	}
 	
 	private void fillList(final int dx) {

@@ -40,18 +40,24 @@
 	        	style="@android:style/MediaButton.Previous"
                 android:background="@drawable/btn_player"
                 android:cropToPadding="false"
+				android:layout_height="fill_parent"
+				android:layout_width="fill_parent"
                 android:layout_weight="1"/>
 	        
 	        <ImageButton android:id="@+id/pause" 
 	        	style="@android:style/MediaButton.Play"
                 android:background="@drawable/btn_player"
                 android:layout_weight="1.5"
+			 	android:layout_height="fill_parent"
+			 	android:layout_width="fill_parent"
                 android:layout_marginLeft="5dp"
                 android:layout_marginRight="5dp"/>
 	        
 	        <ImageButton android:id="@+id/next" 
 	        	style="@android:style/MediaButton.Next"
                 android:background="@drawable/btn_player"
+			 	android:layout_height="fill_parent"
+			 	android:layout_width="fill_parent"
                 android:layout_weight="1"/>
 
         </LinearLayout>
@@ -77,9 +83,7 @@
 	            style="?android:attr/progressBarStyleHorizontal"
 	            android:layout_width="0dip"
 	            android:layout_weight="1"
-	            android:layout_height="wrap_content"
-	            android:layout_alignParentLeft="true"
-	            android:layout_alignParentRight="true" />
+	            android:layout_height="wrap_content" />
 	
 	        <TextView android:id="@+id/time"
 	            android:textSize="14sp"
