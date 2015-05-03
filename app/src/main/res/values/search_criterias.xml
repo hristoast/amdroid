@@ -1,6 +1,6 @@
 <resources>
 
-    <string-array name="search">
+    <string-array name="search" translatable="false">
         <item>All</item>
         <item>Artists</item>
         <item>Albums</item>
